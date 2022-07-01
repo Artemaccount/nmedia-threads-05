@@ -148,7 +148,7 @@ class PostRepositoryImpl : PostRepository {
                 override fun onResponse(call: Call, response: Response) {
                     val body = response.body?.string() ?: throw RuntimeException("body is null")
                     try {
-                        callback.onSuccess(Post(0,"","","",false,0))
+                        callback.onSuccess(Post(0,"","","","",false,0))
                     } catch (e: Exception) {
                         callback.onError(e)
                     }
