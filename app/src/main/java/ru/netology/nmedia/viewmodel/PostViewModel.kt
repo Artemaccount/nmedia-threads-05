@@ -12,6 +12,7 @@ private val empty = Post(
     content = "",
     author = "",
     likedByMe = false,
+    authorAvatar = "",
     likes = 0,
     published = ""
 )
